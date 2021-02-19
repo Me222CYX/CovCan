@@ -4,10 +4,35 @@ author: "Yuxuan Graham Sophia"
 date: "18/02/2021"
 output: html_document
 ---
+```{r}
+installed.packages('devtools')
+library(devtools)
+```
+```{r}
+devtools::install()
+```
+
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+load_all()
 ```
+
+
+```{r}
+library(CovCan)
+CovCan::Get_data('Tow8X4YNqnsWMFGbWxuPynzHh')
+```
+
+```{r}
+library(CovCan)
+CovCan::daily_count('Tow8X4YNqnsWMFGbWxuPynzHh')
+```
+
+```{r}
+CovCan::covid_mapca('infectedCount','Tow8X4YNqnsWMFGbWxuPynzHh')
+```
+
+
 # Introduction to CovCan
 
 
